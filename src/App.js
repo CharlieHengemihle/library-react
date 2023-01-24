@@ -1,5 +1,5 @@
 import './App.css';
-import { Route, Switch } from 'react-router-dom';
+import { Link, Route, Switch } from 'react-router-dom';
 import BookDetail from './components/book/BookDetail.js';
 import BookList from './components/book/BookList.js';
 
@@ -8,8 +8,13 @@ function App() {
   return (
     <main className="container">
       <Switch>
+        <Route exact path="/">
+          <Link to="/books">
+            <h1>Library</h1>
+          </Link>
+        </Route>
         <Route exact path="/books" component={BookList} />
-        <Route path="/books/:book_id" component={BookDetail} />
+        <Route path="/books/:id" component={BookDetail} />
       </Switch>
     </main>
   );
