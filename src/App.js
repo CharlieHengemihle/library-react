@@ -10,9 +10,11 @@ function App() {
       <Switch>
         <Route exact path="/">
           <h1>Welcome to Books-a-Million</h1>
+          <p>Enter the</p>
           <Link to="/books">
-            <h1>Enter the Library Catalog?</h1>
+            <h1>Library Catalog</h1>
           </Link>
+          <h1>?</h1>
         </Route>
         <Route exact path="/books" component={BookList} />
         <Route path="/books/:id" component={BookDetail} />
