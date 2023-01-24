@@ -9,8 +9,9 @@ function App() {
     <main className="container">
       <Switch>
         <Route exact path="/">
+          <h1>Welcome to Books-a-Million</h1>
           <Link to="/books">
-            <h1>Library</h1>
+            <h1>Enter the Library?</h1>
           </Link>
         </Route>
         <Route exact path="/books" component={BookList} />

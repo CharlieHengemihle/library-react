@@ -16,9 +16,7 @@ function Book({
 }) {
   return (
     <article className="book">
-      <Link to={`/books/${book_id}`}>
-        <h3>{title}</h3>
-      </Link>
+      <h3>{title}</h3>
       <address>
         {authors.map((author) => (
           <Author key={author.author_id} author={author} />
@@ -30,7 +28,7 @@ function Book({
           <p>ISBN: {isbn}</p>
           <p>Published {publishedDate}</p>
           <p>{totalPages} pages</p>
-          <Link to={'/books'}>Book List</Link>
+          <Link to={'/books'}>Return to the Library</Link>
         </>
       )}
     </article>

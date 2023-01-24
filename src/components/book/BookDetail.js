@@ -13,7 +13,7 @@ function BookDetail() {
       </>
     );
 
-  if (loading) return <h3>Loading book...</h3>;
+  if (loading) return <h3>HERE COMES A BOOK!!!</h3>;
 
   return <Book book={book} showDetail />;
 }
