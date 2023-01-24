@@ -8,8 +8,8 @@ function App() {
   return (
     <main className="container">
       <Switch>
-        <Route path="/books" component={BookList} />
-        <Route path="/books/:id" component={BookDetail} />
+        <Route exact path="/books" component={BookList} />
+        <Route path="/books/:book_id" component={BookDetail} />
       </Switch>
     </main>
   );
