@@ -11,7 +11,7 @@ function App() {
         <Route exact path="/">
           <h1>Welcome to Books-a-Million</h1>
           <Link to="/books">
-            <h1>Enter the Library?</h1>
+            <h1>Enter the Library Catalog?</h1>
           </Link>
         </Route>
         <Route exact path="/books" component={BookList} />
